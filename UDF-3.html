@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF-3</title>
+</head>
+<body>
+    <script>
+        // 5 //
+        console.log(" add two number of addition, subtraction, multiplication, division. using simple function");
+        // function addnum(num1, num2){
+        //     return num1 + num2;
+        // }
+        // function subnum(num1, num2){
+        //     return num1 - num2;
+        // }
+        // function multinum(num1, num2){
+        //     return num1 * num2;
+        // }
+        // function divnum(num1, num2){
+        //     return num1 / num2;
+        // }
+        // const num1 = prompt("Enter Your Number = 1");
+        // const num2 = prompt("Enter Your Number = 2");
+
+        // const addresult = addnum(num1, num2);
+        // const subresult = subnum(num1, num2);
+        // const multiresult = multinum(num1, num2);
+        // const divresult = divnum(num1, num2);
+
+        // console.log("Addition: ",num1 + num2);
+        // console.log("subtraction: ",num1 - num2);
+        // console.log("multiplication: ",num1 * num2);
+        // console.log("division: ",num1 / num2);
+        function addition(a, b){
+            return a + b;
+        }
+        function subtraction(a, b){
+            return a - b;
+        }
+        function multiplication(a, b){
+            return a * b;
+        }
+        function division(a, b){
+            return a / b;
+        }
+        let a = 10;
+        let b = 5;
+
+        console.log("addition: ",addition(a, b));
+        console.log("subtraction: ",subtraction(a, b));
+        console.log("multiplication: ",multiplication(a, b));
+        console.log("division: ",division(a, b));
+
+        // 6 //
+        console.log("swapping of two variables. all function use");
+        function swapping(c, d){
+            const temp = c;
+            c = d;
+            d = temp;
+            return[c, d];
+        }
+        let x = prompt("Enter Your Number = x");
+        let y = prompt("Enter Your Number = y");
+
+        console.log("Before Swapping: x =", x, "and y = ",y);
+
+        [x, y] = swapping(x, y);
+
+        console.log("Swapping: X = ", x, "and Y = ",y);
+    </script>
+</body>
+</html>

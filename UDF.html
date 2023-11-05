@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDF</title>
+</head>
+<body>
+    <script>
+        // 1 //
+        console.log("check number positive and negetive. using simple function");
+        function positive(number){
+            if(number > 0){
+                console.log("Number Is Positive");
+                return number
+            }
+            else if(number == 0){
+                console.log("Number Is Zero");
+                return number
+            }
+            else{
+                console.log("Number Is Negative");
+                return number
+            }
+        }
+        const num = prompt("Enter Your Number = ");
+        const result = positive(num);
+        console.log(result);
+        // 2 //
+        console.log("check number positive and negetive. using no return with parameter");
+        function num1(number){
+            if(number > 0){
+                console.log("Number is positive",number);
+            }
+            else if(number == 0){
+                console.log("Number is Zero");
+            }
+            else{
+                console.log("Number is Negative");
+            }
+        }
+        const nums = prompt("Enter Your Number = ");
+        const answer = num1(nums);
+        console.log(answer);
+    </script>
+</body>
+</html>
